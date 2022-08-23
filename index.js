@@ -1,4 +1,4 @@
-const byteSize = module.exports = function tinyByteSize (bytes, space = false) {
+const byteSize = module.exports = exports = function tinyByteSize (bytes, space = false) {
   const b = bytes < 0 ? -bytes : bytes
   if (b < 1e3) return fmt(bytes, 'B', space)
   if (b < 1e6) return fmt(bytes / 1e3, 'kB', space)
@@ -11,7 +11,7 @@ const byteSize = module.exports = function tinyByteSize (bytes, space = false) {
   return fmt(bytes / 1e24, 'YB', space)
 }
 
-module.exports.perSecond = function perSecond (bytes, ms = 1000, space = false) {
+exports.perSecond = function perSecond (bytes, ms = 1000, space = false) {
   return byteSize(bytes / ms * 1e3, space) + '/s'
 }
 
