@@ -3,8 +3,17 @@
   "version": "1.0.1",
   "description": "Dead simple, single file, tiny byte formatter",
   "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "standard && brittle test.mjs"
+  },
   "dependencies": {},
-  "devDependencies": {},
+  "devDependencies": {
+    "brittle": "^3.0.4",
+    "standard": "^17.0.0"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/mafintosh/tiny-byte-size.git"
