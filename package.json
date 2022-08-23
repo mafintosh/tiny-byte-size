@@ -1,6 +1,6 @@
 {
   "name": "tiny-byte-size",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Dead simple, single file, tiny byte formatter",
   "main": "index.js",
   "files": [
